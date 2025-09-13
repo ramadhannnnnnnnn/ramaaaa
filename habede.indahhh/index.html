@@ -7,20 +7,24 @@
     <script src="https://dekatutorial.github.io/flwr/s.js"></script>
   </head>
   <body>
-    <div class="open">
+    <div class="open" onclick="rama()">
       <i>👊🏽</i>
       <span>Klik tombol antemi</span>
     </div>
 
+    <!-- elemen audio -->
+    <audio id="musik" src="musik.mp3"></audio>
+
     <script>
-      ucapan = `woi woi woi 
+      let ucapan = `woi woi woi 
       habedeee indahhh semoga amin 
       wes pokok e amin`;
-      musik = `musik.mp3`;
-      nomorWhatsapp = ``;
-      idTelegram = ``;
+      let musik = document.getElementById("musik");
 
-      rama(se efrot ini ga di traktir behh);
+      function rama() {
+        alert(ucapan);      // tampilkan pesan
+        musik.play();       // langsung putar musik.mp3
+      }
     </script>
   </body>
 </html>
