@@ -5,33 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Special For You</title>
     <script src="https://dekatutorial.github.io/flwr/s.js"></script>
-
-    <style>
-      /* Sembunyikan watermark / template by Dika */
-      a[href*="dekatutorial"],
-      div:contains("Template by"),
-      div:contains("Deka Tutorial") {
-        display: none !important;
-        visibility: hidden !important;
-      }
-    </style>
   </head>
   <body>
     <div class="open">
       <i>❤️‍🔥</i>
-      <span>antemi tombole</span>
+      <span>antemi emot e</span>
     </div>
 
     <script>
       ucapan = `woi woi woi🎉
       met habede indah semoga amin wes
-      pokok amin ga ita itu🎂`;
+      pokok amin ga ita itu🎂
+      wes se efrot iki 
+      ga di traktir a behh 
+      nemennn wkwkwk`;
       musik = `musik.mp3`;
       nomorWhatsapp = ``;
       idTelegram = ``;
 
       DekaTutorial(ucapan, musik, nomorWhatsapp, idTelegram);
     </script>
+
+    <!-- Script auto-hide watermark -->
+    <script>
+      let hideDeka = setInterval(() => {
+        document.querySelectorAll("div, a, span, p").forEach(el => {
+          if (el.innerText && (el.innerText.includes("Deka") || el.innerText.includes("Template by"))) {
+            el.style.display = "none"; // sembunyikan
+            // el.remove(); // bisa dipakai kalau mau hapus beneran
+          }
+        });
+      }, 500);
+    </script>
   </body>
 </html>
-
