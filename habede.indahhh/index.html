@@ -1,9 +1,3 @@
-<!--=========================-!>
-Mau custom web ucapan online & tanpa watermark? Order Aja di Deka Tutorial !! (DM IG untuk order)
-+ Youtube: Deka Tutorial
-+ Tiktok: @deka_tutorial
-+ Instagram: deka_tutorial
-<-===========================-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,6 +5,16 @@ Mau custom web ucapan online & tanpa watermark? Order Aja di Deka Tutorial !! (D
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Special For You</title>
     <script src="https://dekatutorial.github.io/flwr/s.js"></script>
+
+    <style>
+      /* Sembunyikan watermark / template by Dika */
+      a[href*="dekatutorial"],
+      div:contains("Template by"),
+      div:contains("Deka Tutorial") {
+        display: none !important;
+        visibility: hidden !important;
+      }
+    </style>
   </head>
   <body>
     <div class="open">
@@ -26,13 +30,7 @@ Mau custom web ucapan online & tanpa watermark? Order Aja di Deka Tutorial !! (D
       nomorWhatsapp = ``;
       idTelegram = ``;
 
-
-
-
-
-      
       DekaTutorial(ucapan, musik, nomorWhatsapp, idTelegram);
     </script>
   </body>
 </html>
-
